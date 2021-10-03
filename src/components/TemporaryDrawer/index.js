@@ -26,6 +26,7 @@ import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
+import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
 
 export default function TemporaryDrawer() {
 
@@ -84,6 +85,12 @@ export default function TemporaryDrawer() {
                             <ExploreIcon style={{ color: "#9214B5" }} />
                         </ListItemIcon>
                         <ListItemText primary="Explore" />
+                    </ListItem>
+                    <ListItem button key="Ranking">
+                        <ListItemIcon>
+                            <FormatListNumberedIcon style={{ color: "#9214B5" }} />
+                        </ListItemIcon>
+                        <ListItemText primary="Ranking" />
                     </ListItem>
                     <ListItem button key="Store">
                         <ListItemIcon>
