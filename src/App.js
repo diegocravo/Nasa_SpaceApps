@@ -11,6 +11,7 @@ import {
 import ChanllengeOne from "./components/Challenge/ChanllengeOne";
 import ChanllengeOnee from "./components/Challenge/ChanllengeOnee";
 import Profile from "./components/Profile";
+import Ranking from "./components/Ranking";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         </Route>
         <Route path="/profile">
           <Profile />
+        </Route>
+        <Route path="/rank">
+          <Ranking />
         </Route>
         <Route path="/">
           <Home />
