@@ -4,7 +4,8 @@ import Box from '@mui/material/Box';
 import LockIcon from '@mui/icons-material/Lock';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Menina from "../../assets/menina.png"
+import Menina from "../../../assets/menina.png"
+import DisNave from "../../../assets/DisNave.png"
 import { BrowserRouter as Router, useHistory } from "react-router-dom";
 
 function Item(props) {
@@ -43,12 +44,19 @@ function CardItem1() {
         </div>
     )
 }
+function CardItem2() {
+    return (
+        <div style={{ display: "flex", alignItens: "center", justifyContent: "center", height: "150px", backgroundColor: '#7DCAAC', borderRadius: "5px" }}>
+            <img style={{height: "150px",}} src={DisNave} alt="first challenge" />
+        </div>
+    )
+}
 
 Item.propTypes = {
     sx: PropTypes.object,
 };
 
-export default function Home() {
+export default function ChanllengeOnee() {
 
     let history = useHistory();
 
@@ -71,7 +79,7 @@ export default function Home() {
                     <div onClick={() => history.push("/Challenge/1")}>
                     <CardItem1 source={Menina} />
                     </div>
-                    <CardItem color="#7DCAAC" />
+                    <CardItem2 source={DisNave} />
                     <CardItem color="#B4BDFF" />
                     <CardItem color="#FFE6A7" />
                     <CardItem color="#FFBEBE" />
